@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  html {
+    background-color: GhostWhite;
+  }
+  #anim {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+    border-radius: 40%;
+    overflow: hidden;
+    animation: bgcolor linear 8s infinite;
+    font-size:0;
+    /*line-height:0;
+    letter-spacing: -1px;
+    display: -moz-inline-stack!important;*/
+  }
+  #anim div {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    animation-name: boxfirst;
+    animation-duration: .55s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes bgcolor {
+    0% {background: ForestGreen;}
+    20% {background: RoyalBlue;}
+    40% {background: Tomato;}
+    60% {background: DarkMagenta;}
+    80% {background: Gold;}
+    100% {background: ForestGreen;}
+  }
+  .box1 {animation-delay: -.55s;}
+  .box2 {animation-delay: -.50s;}
+  .box3 {animation-delay: -.45s;}
+  .box4 {animation-delay: -.40s;}
+  .box8 {animation-delay: -.35s;}
+  .box12 {animation-delay: -.30s;}
+  .box16 {animation-delay: -.25s;}
+  .box15 {animation-delay: -.20s;}
+  .box14 {animation-delay: -.15s;}
+  .box13 {animation-delay: -.10s;}
+  .box9 {animation-delay: -.5s;}
+  .box5 {animation-delay: 0s;}
+  .box6 {animation-delay: 0s; opacity: .5;}
+  .box7 {animation-delay: .18s; opacity: .5;}
+  .box10 {animation-delay: .36s; opacity: .5;}
+  .box11 {animation-delay: .55s; opacity: .5;}
+
+  @keyframes boxfirst {
+    0% {background-color: rgba(0,0,0,.2)}
+    50% {background-color: rgba(255,255,255,.2)}
+    100% {background-color: rgba(0,0,0,.2)}
+  }
+</style>
+<body>
+<div id="anim">
+  <div class="box1">1</div>
+  <div class="box2">2</div>
+  <div class="box3">3</div>
+  <div class="box4">4</div>
+  <div class="box5">5</div>
+  <div class="box6">6</div>
+  <div class="box7">7</div>
+  <div class="box8">8</div>
+  <div class="box9">9</div>
+  <div class="box10">10</div>
+  <div class="box11">11</div>
+  <div class="box12">12</div>
+  <div class="box13">13</div>
+  <div class="box14">14</div>
+  <div class="box15">15</div>
+  <div class="box16">16</div>
+</div>
+</body>
+</html>
